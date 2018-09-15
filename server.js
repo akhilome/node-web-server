@@ -41,4 +41,10 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    title: 'Couple Projs'
+  });
+});
+
 app.listen(port, () => console.log('server running on', port));
